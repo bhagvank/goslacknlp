@@ -16,7 +16,7 @@ AI based NLP engine scans and parses the messages from Slack. Slack is used for 
 
   * [Go](https://golang.org/dl/)
 
-  * [Postgres](https://elements.heroku.com/addons/heroku-postgresql)
+  * [Mysql](https://dev.mysql.com/downloads/mysql/)
   
   
 2.git clone this repository
@@ -25,14 +25,18 @@ git clone https://github.com/bhagvank/goslacknlp.git
 
 ```
 
-3. create slack api token and google service accounts
+3. set up the mysql driver
+```
+go get -u github.com/go-sql-driver/mysql
+```
+4. create slack api token and google service accounts
 
    * [Slack](https://api.slack.com/custom-integrations/legacy-tokens)
    * [Google](https://cloud.google.com/compute/docs/access/service-accounts)
    
-4. start the go web forms
+5. start the go web forms
 ```
-go run slacknlpapp.go slacknlp_database_operations.go
+go run slacknlp.go slacknlp_database_operations.go
 ```
   
 
