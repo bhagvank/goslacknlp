@@ -30,7 +30,10 @@ git clone https://github.com/bhagvank/goslacknlp.git
    * [Slack](https://api.slack.com/custom-integrations/legacy-tokens)
    * [Google](https://cloud.google.com/compute/docs/access/service-accounts)
    
-
+4. start the go web forms
+```
+go run slacknlpapp.go slacknlp_database_operations.go
+```
   
 
 
