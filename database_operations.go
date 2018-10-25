@@ -23,7 +23,7 @@ func GetConnection() (database *sql.DB) {
     databaseDriver := "mysql"
     databaseUser := "newuser"
     databasePass := "newuser"
-    databaseName := "crm"
+    databaseName := "slacknlp"
     database, error := sql.Open(databaseDriver, databaseUser+":"+databasePass+"@/"+databaseName)
     if error != nil {
         panic(error.Error())
